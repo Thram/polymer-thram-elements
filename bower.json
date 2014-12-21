@@ -1,6 +1,7 @@
 {
   "name": "polymer-thram-elements",
   "version": "0.0.1",
+  "main": "dist/thram-elements.html",
   "authors": [
     "thram <thramposo@gmail.com>"
   ],
@@ -20,6 +21,5 @@
   "dependencies": {
     "polymer": "Polymer/polymer#~0.5.2",
     "animate-sass": "0.6.2"
-
   }
 }

@@ -10,7 +10,7 @@ Polymer Elements made by Thram
 <link rel="import" href="components/polymer-thram-elements/thram-elements.html">
 ```
 
-Thram's Drawer
+## Thram's Drawer
 
 **Attributes**:
   * `right`: Drawer floats right. By default it floats left.

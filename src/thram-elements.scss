@@ -105,6 +105,12 @@ $hinge-translate: 700px !default;
   &.slideOutLeft {
     @include prefix(animation-name, slideOutLeft);
   }
+  &.slideInRight {
+    @include prefix(animation-name, slideInRight);
+  }
+  &.slideInLeft {
+    @include prefix(animation-name, slideInLeft);
+  }
 
 }
 
@@ -137,5 +143,29 @@ $hinge-translate: 700px !default;
   100% {
     opacity: 0;
     @include prefix(transform, translateX(-$base-distance-big * 2));
+  }
+}
+
+@include prefix-keyframe('slideInRight') {
+  0% {
+    opacity: 0;
+    @include prefix(transform, translateX($base-distance-big * 2));
+  }
+
+  100% {
+    opacity: 1;
+    @include prefix(transform, translateX(0));
+  }
+}
+
+@include prefix-keyframe('slideInLeft') {
+  0% {
+    opacity: 0;
+    @include prefix(transform, translateX(-$base-distance-big * 2));
+  }
+
+  100% {
+    opacity: 1;
+    @include prefix(transform, translateX(0));
   }
 }

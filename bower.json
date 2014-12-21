@@ -19,7 +19,7 @@
     "demo"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.2",
-    "animate-sass": "0.6.2"
+    "polymer": "latest",
+    "animate-sass": "latest"
   }
 }

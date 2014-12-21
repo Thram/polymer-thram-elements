@@ -13,7 +13,7 @@ Polymer('drawer-element', {
             this.style.setProperty('right', '0') : this.style.setProperty('left', '0');
 
         var htmlBounds = getBounds('html');
-        var width = properties.half ? htmlBounds.width / 2 :
+        var width = properties.half ? (htmlBounds.width / 2 ) + 'px' :
             properties.width != null ? properties.width : htmlBounds.width + 'px';
         this.style.setProperty('width', width);
         var height = properties.width != null ? properties.width : htmlBounds.height + 'px';

@@ -1,0 +1,22 @@
+@mixin prefix($property, $value...) {
+  -webkit-#{$property}: unquote($value);
+  -moz-#{$property}: unquote($value);
+  -o-#{$property}: unquote($value);
+  #{$property}: unquote($value);
+}
+
+drawer-element {
+  &.left {
+    @include prefix(box-shadow, 10px 0 40px -10px rgba(0, 0, 0, 0.3));
+  }
+
+  &.right {
+  }
+
+}
+
+body {
+  -webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
+}
+
+

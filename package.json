@@ -1,0 +1,19 @@
+{
+  "name": "polymer-thram-elements",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "Thram",
+  "license": "",
+  "dependencies": {
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-inline-source": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
+  }
+}

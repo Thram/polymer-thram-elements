@@ -1,0 +1,78 @@
+/*
+Error: Undefined variable: "$base-duration".
+        on line 4 of drawer-element.scss, in `prefix'
+        from line 4 of drawer-element.scss
+
+1: @import "../thram";
+2: 
+3: drawer-element {
+4:   @include prefix(animation-duration, $base-duration);
+5:   @include prefix(animation-fill-mode, both);
+6: 
+7:   &.hinge {
+8:     @include prefix(animation-duration, $base-duration * 4);
+9:   }
+
+Backtrace:
+drawer-element.scss:4:in `prefix'
+drawer-element.scss:4
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:344:in `block (2 levels) in visit_mixin'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:344:in `map'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:344:in `block in visit_mixin'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:98:in `with_mixin'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/exec/sass_scss.rb:350:in `watch_or_update'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/exec/base.rb:52:in `parse'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/exec/base.rb:19:in `parse!'
+/Users/thram/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/bin/scss:13:in `<top (required)>'
+/Users/thram/.rvm/gems/ruby-2.1.1/bin/scss:23:in `load'
+/Users/thram/.rvm/gems/ruby-2.1.1/bin/scss:23:in `<main>'
+/Users/thram/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/thram/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$base-duration\".\A         on line 4 of drawer-element.scss, in `prefix'\A         from line 4 of drawer-element.scss\A \A 1: @import \"../thram\";\A 2: \A 3: drawer-element {\A 4:   @include prefix(animation-duration, $base-duration);\A 5:   @include prefix(animation-fill-mode, both);\A 6: \A 7:   &.hinge {\A 8:     @include prefix(animation-duration, $base-duration * 4);\A 9:   }"; }

@@ -1,0 +1,24 @@
+{
+  "name": "polymer-thram-elements",
+  "version": "0.0.1",
+  "authors": [
+    "thram <thramposo@gmail.com>"
+  ],
+  "description": "Polymer Elements made by Thram",
+  "keywords": [
+    "polymer-thram"
+  ],
+  "license": "GNU LGPL v3.0",
+  "homepage": "touchtech.co.nz",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.2",
+
+  }
+}

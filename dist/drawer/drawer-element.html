@@ -1,7 +1,0 @@
-<link rel="import" href="../polymer/polymer.html">
-<style>drawer-element.left{-webkit-box-shadow:10px 0 40px -10px rgba(0,0,0,.3);-moz-box-shadow:10px 0 40px -10px rgba(0,0,0,.3);-o-box-shadow:10px 0 40px -10px rgba(0,0,0,.3);box-shadow:10px 0 40px -10px rgba(0,0,0,.3)}body{-webkit-backface-visibility:hidden}</style>
-
-<polymer-element name="drawer-element">
-  <template></template>
-  <script>Polymer("drawer-element",{ready:function(){var t={half:null!=this.getAttribute("half"),right:null!=this.getAttribute("right"),width:this.getAttribute("width"),height:this.getAttribute("height")};this.style.setProperty("position","absolute"),this.style.setProperty("top","0"),t.right?this.style.setProperty("right","0"):this.style.setProperty("left","0");var e=getBounds("html"),i=t.half?e.width/2:null!=t.width?t.width:e.width;this.style.setProperty("width",i+"px");var h=null!=t.width?t.width:e.height;this.style.setProperty("height",h+"px"),this.className="animated hinge "+(t.right?"slideOutRight right":"slideOutLeft left")}});</script>
-</polymer-element>

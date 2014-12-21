@@ -3,6 +3,10 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'), del = require('del'), rename = require('gulp-rename');
 
 
+gulp.task('clean:dist', function () {
+    return del(['./dist/**/*', './demos/components/polymer-thram-elements']);
+});
+
 gulp.task('compress', function () {
     gulp.src('./src/**/*.js')
         .pipe(uglify())
@@ -23,24 +27,21 @@ gulp.task('copy:html', function () {
 gulp.task('inlineSource', ['clean:dist', 'compress', 'sass', 'copy:html'], function () {
     return gulp.src('./tmp/**/*.html')
         .pipe(inlineSource())
+        .pipe(rename({dirname: ''}))
         .pipe(gulp.dest('./dist'));
 });
 
 
 gulp.task('copy:demo', ['inlineSource'], function () {
-    return gulp.src('./dist/**/*.html')
-        .pipe(rename({dirname: ''}))
+    return gulp.src('./dist/*.html')
         .pipe(gulp.dest('./demos/components/polymer-thram-elements'));
 });
 
-gulp.task('clean:dist', function () {
-    return del(['./dist/**/*', './demos/components/polymer-thram-elements']);
-});
 
 gulp.task('clean:tmp', ['copy:demo'], function () {
-    del('./tmp/**/*');
+    return del('./tmp/**/*');
 });
 
-gulp.task('build', ['copy:demo', 'inlineSource', 'clean:dist', 'compress', 'sass', 'copy:html']);
+gulp.task('build', ['clean:tmp']);
 
 gulp.task('default', ['build']);

@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('clean:dist', function () {
-    return del(['./dist/**/*', './demos/components/polymer-thram-elements']);
+    return del(['./*.html', './demos/components/polymer-thram-elements']);
 });
 
 gulp.task('compress', function () {
@@ -28,14 +28,14 @@ gulp.task('inlineSource', ['clean:dist', 'compress', 'sass', 'copy:html'], funct
     return gulp.src('./tmp/**/*.html')
         .pipe(inlineSource())
         .pipe(rename({dirname: ''}))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./'));
 });
 
 
 gulp.task('copy:demo', ['inlineSource'], function () {
-    return gulp.src('./dist/*.html')
+    return gulp.src('./*.html')
         .pipe(gulp.dest('./demos/components/polymer-thram-elements'));
-});
+})
 
 
 gulp.task('clean:tmp', ['copy:demo'], function () {

@@ -12,6 +12,12 @@ Polymer Elements made by Thram
 
 Thram's Drawer
 
+**Attributes**:
+  *'right': Drawer floats right. By default it floats left.
+  *'half': Cover half width of the <html> and 100% of the height
+  *'width': Define specific width
+  *'height': Define specific height
+
 ```html
 <html>
 <head>

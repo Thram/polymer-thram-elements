@@ -1,6 +1,8 @@
 polymer-thram-elements
 ======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Thram/polymer-thram-elements.svg)](https://greenkeeper.io/)
+
 Polymer Elements made by Thram
 
 ```html
